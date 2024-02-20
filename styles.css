@@ -24,6 +24,7 @@ body {
   margin: 0;
   background-image: url(images/background-1.jpg);
   background-size: cover;
+  background-color: var(--main-background);
   color: #f5f6f7;
   font-family: Tahoma;
   font-size: 18px;
@@ -52,9 +53,10 @@ h1, p {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   width: 70vw;
   max-width: 500px;
-  min-width: 300px;
   margin: 0 auto;
   padding-bottom: 2em;
   padding-left: 1em;
