@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet" />
-    <title>Contact</title>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Equiry Form</title>
 </head>
 <body>
     <div class="container">
-      <h1>FormSubmit Demo</h1>
-      <form target="_blank" action="https://formsubmit.co/jones2270@talktalk.net" method="POST">
-        <div class="form-group">
+      <h1 id="title">Email Equiry Form</h1>
+      <p id="description">Thank you for taking part in my survey</p>
+      <form id="survey-form" target="_blank" action="https://formsubmit.co/jones2270@talktalk.net" method="POST">
+        <!--<div class="form-group">
           <div class="form-row">
             <div class="col">
               <input type="text" name="name" class="form-control" placeholder="Full Name" required>
@@ -23,7 +24,30 @@
         <div class="form-group">
           <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
         </div>
-        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      -->
+      <fieldset>
+        <label id="name-label">Name:<input id="name" type="text" required placeholder="Enter your name" /></label>
+        <label id="email-label">Email:<input id="email" type="email" required placeholder="Enter your email" /></label>
+        <label id="number-label">Age:<input id="number" type="number" min="18" max="67" placeholder="Enter age (years)" /></label>
+        <label id="email-label">Telephone:<input id="telephone" type="tel" required placeholder="Enter your phone number" /></label>
+      </fieldset>
+
+      <fieldset>
+        <label>Select an option</label>
+        <select id="dropdown">
+        <option>(select one)</option>
+        <option>General Equiry</option>
+        <option>Monthly Online Coaching Plan</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+      <label>Feedback or suggestions:
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Leave a sugestion or feedback here"></textarea>
+        </label>
+      </fieldset>
+        
+        <button class="submit" type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
       </form>
     </div>
 </body>
