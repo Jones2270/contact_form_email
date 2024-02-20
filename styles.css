@@ -111,6 +111,8 @@ input, textarea {
 }
 
 .submit {
+  min-height: 2em;
+  margin-top: 10px;
   background-color: #3b3b4f;
   color: white;
   opacity: 1;
